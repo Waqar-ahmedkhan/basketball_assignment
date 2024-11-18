@@ -1,0 +1,150 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1E1E2E"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Match Status -->
+    <TextView
+        android:id="@+id/match_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Play!"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <!-- Team A Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:background="@android:color/darker_gray">
+
+        <!-- Team A Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team A"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_gravity="center" />
+
+        <!-- Team A Score -->
+        <TextView
+            android:id="@+id/team_a_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <!-- Team A Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/team_a_add_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/team_a_add_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+2"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/team_a_add_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Team B Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="16dp">
+
+        <!-- Team B Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_gravity="center" />
+
+        <!-- Team B Score -->
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <!-- Team B Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/team_b_add_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/team_b_add_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+2"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/team_b_add_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center" />
+</LinearLayout>
